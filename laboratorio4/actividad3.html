@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>tablas html</title>
+	<style>
+		body{
+	padding: 5px;
+	margin: 10px;
+	font-family: verdana;
+	background-color: #E8F696;
+	line-height: 1.5;
+	text-align: justify;
+}
+table, th, td {
+  border:1px solid black;
+
+}
+
+h2{
+	margin: 8px;
+}
+ul li ol{
+	margin: 2px;
+}
+header{
+	background-color: #4CAF50;
+	
+	text-align: center;
+	padding: 1em;
+	font-size-adjust: 5em;
+}
+		table{
+			width: 70%;
+			border-collapse: collapse;
+			margin: 8%;
+			border: 1px;
+		}
+		th, td {
+ 			 border:1px solid;
+  			padding: 8px;
+  			text-align: center;
+			}
+		th{
+		background-color: green;
+		}
+		tr{
+		background-color: white;
+		}
+		p {
+	margin-left: 5px;
+	margin-right: 5px ;
+}
+	</style>
+</head>
+<body>
+	<header backgraund-color>ACTIVIDAD 3</header>
+	<center><h1> LISTAS ORDENADAS Y DESORDENADAS </h1></center>
+	<nav>
+	<ul>
+		<li><a href="#listas ordenadas">Listas Ordenadas</a> </li>
+		<li><a href="#listas desordenadas">Listas Desordenadas</a> </li>
+		<li> <a href="#listas anidadas">Listas Anidadas</a></li>
+		<li> <a href="#Tablas">tablas</a></li>
+	</ul>
+</nav>
+<br>
+ 
+ <h2 id="listas ordenadas">Listas ordenadas</h2>
+ <p>Las listas ordenadas en HTML son una herramienta muy útil que nos permite organizar de manera secuencial una serie de elementos, por ejemplo:</p>
+ <h3>comidas rapidas</h3>
+ <ol>
+ 	<li>hamburguesa</li>
+ 	<li>pizza</li>
+ 	<li>perro calientw</li>
+ 	<li>salchipapa</li>
+ 	<li>patacon relleno</li>
+ </ol>
+ <br>
+ <h2 id="listas desordenadas">Listas desordenadas</h2>
+ <p>son utilizadas para crear listas sin ningún orden específico. Los elementos en estas listas aparecerán en el orden en el que se establezcan. Cada elemento de la lista se define mediante la etiqueta, por ejemplo:</p>
+ <h3>Lenguajes de programacion</h3>
+ <ul>
+ 	<li>javascript</li>
+ 	<li>python</li>
+ 	<li>visual code</li>
+ 	<li>c++</li>
+ 	<li>C sharp</li>
+ </ul>
+ <br>
+<h2 id="listas anidadas">Listas anidadas</h2>
+<p>es una lista dentro de otra lista. Esto significa que podemos tener elementos secundarios (subelementos) dentro de elementos primarios (elementos principales). Esta estructura jerárquica permite organizar la información de manera lógica y visualmente atractiva. Por ejemplo:</p>
+<h3>construccion de casas</h3>
+<ul>
+	<li>recursos
+		<ol start="2">
+			<li>ladrillos</li>
+			<li>cemento</li>
+			<li>arenila</li>
+		</ol></li>
+	<li>mano de obra
+		<ol>
+			<li>obreros
+				<ul><li>ladrillos</li>
+					<li>cemento</li>
+					<li>arenilla</li>
+					<li>apilar</li></ul></li>
+			<li>arquitecto</li>
+			<li>conductores<ul><li>camion</li>
+					<li>automovil</li>
+					<li>volquetas</li>
+					<li>hormiguera</li></ul></li>
+		</ol></li>
+
+</ul>
+
+<br>
+<h2 id="Tablas">Tablas</h2>
+<p >Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas (datos tabulados). Una tabla permite buscar con rapidez y facilidad valores entre diferentes tipos de datos que indiquen algún tipo de conexión. Por ejemplo:</p>
+ <table cellpadding="5px" cellspacing="2px" alt="tablas con registros" title="tabla que contiene registro de personas con 3 columnas y 4 filas">
+	<tr bgcolor="green">
+		<th>Nombre</th>
+		<th>Apellido</th>
+		<th>Cedula</th>
+	</tr>
+	<tr bgcolor="white">
+		<td>Juan</td>
+		<td>Perez</td>
+		<td>123</td>
+	</tr>
+	<tr bgcolor="white">
+		<td>Camila</td>
+		<td>Torres</td>
+		<td>124</td>
+	</tr>
+	<tr bgcolor="white">
+		<td>Victor</td>
+		<td>Moreno</td>
+		<td>125</td>
+	</tr>
+	<tr bgcolor="white">
+		<td>Antonio</td>
+		<td>Moscote</td>
+		<td>126</td>
+	</tr>
+</table>
+<footer> <hr>
+	<p>&copy; 2024- Mi primer pagina con listas y tablas</p></footer>
+</body>
+</html>

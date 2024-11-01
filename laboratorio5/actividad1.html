@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario</title>
+	<style>
+		li{
+			padding: 5px;
+			margin: 5px;
+		}
+		header{
+			background: green;
+			text-align: center;
+			font-size-adjust: 3em;
+			padding: 5px;
+		}
+		body{
+			
+          padding: 5px;
+	margin: 10px;
+	font-family: verdana;
+	background-color: #E8F696;
+	line-height: 1.5;
+	text-align: left;
+		}
+		input {
+			padding: 2px;
+			border-color: blue;
+		}
+		input[type="submit"]{
+         width: 500px;
+         margin: 3px;
+         background: greenyellow;
+		}
+		input[type="reset"]{
+			width: 500px;
+			margin: 3px;
+			background:greenyellow ;
+		}
+		
+	</style>
+</head>
+<body>
+	<header >
+		Formulario de Datos Personales Generales
+	</header>
+	<form action="" method="post">
+		<fieldset>
+			<legend > Datos personales</legend>
+		<ul>
+		<li><label for="name" >Nombre: </label>
+		<input type="text" id="name" name="user_name" placeholder="Digite su nombre de pila" size="20" required></li>
+		<li><label for="name" >Apellido: </label>
+		<input type="text" id="lastname" name="user_lastname" placeholder="Digite su apellido" size="20" required></li>
+		<li>
+			<label for="number" >Edad: </label>
+		<input type="number" id="age" name="user_age" min="18" max="99" step="1" placeholder="Edad">
+		</li>
+		<li>
+			<label for="birthday" >Fecha de Nacimiento: </label>
+		<input type="date" id="birthday" name="user_date" required>
+		</li>
+		<li><label for="direction" >Dirección: </label>
+		<input type="text" id="direction" name="user_direction" placeholder="Digite su Dirección" size="30"></li>
+        <li><label for="email" >Correo Electronico: </label>
+		<input type="email" id="email" name="user_email" placeholder="Digite su Correo Electronico"></li>
+		<li>
+			<label for="text">Digite una descripción: </label>
+		<input type="textarea" id="text" name="user_textarea" placeholder="Descripción" size="100" ></li>
+
+	</fieldset>
+	<fieldset>
+		<legend> Selección</legend>
+		
+			
+			<label for="gender">Genero:</label><br>
+			<ul><li>Masculino:   <input type="radio" id="Masculino" name="gender" value="Masculino" ></li> 
+				<li>Femenino:    <input type="radio" id="Femenino" name="gender" value="Femenino"></li> 
+				<li>Otro:     <input type="radio" id="Otro" name="gender" value="Otro"></li>
+				<li>No especificar:<input type="radio" id="No especificar" name="gender" value="No especificar"></li> 
+			</ul><br>
+			<label for="hobbits">Pasatiempos:</label>
+			<ul><li>Skateboard:<input type="checkbox" id="Skateboard" name="hobbits" value="Skateboard"></li>
+				<li>Pintar:<input type="checkbox" id="Pintar" name="hobbits" value="Pintar"></li> 
+				<li>Leer:     <input type="checkbox" id="Leer" name="hobbits" value="Leer"></li>
+				<li>Escribir:<input type="checkbox" id="Escribir" name="hobbits" value="Escribir"></li> 
+
+			</ul><br>
+
+	</fieldset>
+
+		<input type="submit" id="enviarboton" value="Enviar"> <br>
+		<input type="reset" id="resetboton" value="Borrar">
+	
+	</form>
+</body>
+</html>

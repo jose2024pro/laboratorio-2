@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        console.log("VERIFICACION DE CALIFICACIONES");
+        console.log("");
+
+        let nota; 
+
+        do {
+            nota = parseFloat(prompt("Ingrese la nota entre 0 y 100", 0));
+        } while ((nota < 0) || (nota > 100));
+
+        if (nota >= 70) {
+            if (nota >= 90) {
+            console.log("El estudiante está Aprobado con honores");
+            alert('El estudiante está Aprobado con honores');
+            } else {
+            console.log("El estudiante está Aprobado");
+            alert('El estudiante está Aprobado');
+            }
+        } else {
+            console.log("El estudiante está Reprobado");
+            alert('El estudiante está Reprobado');
+        }
+
+
+    </script>
+
+</body>
+</html>

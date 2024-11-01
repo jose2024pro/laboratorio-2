@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		body{
+	padding: 5px;
+	margin: 10px;
+	font-family: verdana;
+	background-color: grey;
+	line-height: 1.5;
+	text-align: justify;
+       }
+       </style>
+</head>
+<body>
+    <h1 style="color: blue;">ADIVINANZA: adivine un número del 1 al 10</h1>
+    <div id="resultado" style="color: aqua;"></div>
+   <script>
+    console.log("ADIVINANZA: adivine un numero del 1 al 10")
+   
+    let numero_aleatorio = Math.floor(Math.random() * 10) + 1;
+    let numero_usuario;
+    do {
+        numero_usuario=parseFloat(prompt("Ingrese un numero entre 1 y 10", 0));
+    } while ((numero_usuario <=0) || (numero_usuario> 10));
+    //if(numero_aleatorio==numero_usuario){
+       // console.log("!FELICIDADES, adivinaste el número¡")
+    //}else{
+      //  console.log("Lo siento, el numero era "+numero_aleatorio);
+    //}
+    let mensaje;
+        if (numero_aleatorio === numero_usuario) {
+            mensaje = "¡FELICIDADES, adivinaste el número!";
+        } else {
+            mensaje = "Lo siento, el número era " + numero_aleatorio;
+        }
+
+        // Muestra el resultado en la página
+        document.getElementById("resultado").innerText = mensaje;
+   </script>
+</body>
+</html>

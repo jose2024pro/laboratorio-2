@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let contraseña = "123456";
+let contra_usuario;
+
+do {
+    contra_usuario = prompt("Ingrese una contraseña de 6 números");
+    if (contra_usuario.length !== 6) {
+        alert('La contraseña debe tener exactamente 6 números.');
+    } else if (contra_usuario !== contraseña) {
+        alert('Contraseña incorrecta');
+    }
+} while (contra_usuario.length !== 6 || contra_usuario !== contraseña);
+
+alert('Contraseña correcta');
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let esMayorDeEdad= true;
+        let tieneLicencia= false;
+        console.log("USANDO IF:");
+        console.log("¿La persona puede conducir vehiculos?")
+        if(esMayorDeEdad&&tieneLicencia){
+            console.log("la persona puede conducir, CUMPLE los requisitos.")          
+        }else{
+            console.log("la persona NO puede conducir, no CUMPLE los requisitos. ")
+        }
+        console.log(" ");
+        console.log("¿La persona cumple algun requisito?")
+        if(esMayorDeEdad||tieneLicencia){
+            console.log("la persona CUMPLE almenos un requisito.")          
+        }else{
+            console.log("la persona no CUMPLE ninguno de los requisitos. ")
+        }
+        console.log(" ");
+        console.log("--------------------------------------------------");
+        console.log(" SIN USAR IF:");
+        console.log("Si la persona puede conducir debe ser true sino false:")
+        console.log(esMayorDeEdad&&tieneLicencia);
+        console.log("¿cumple almenos con un requsito?")
+        console.log(esMayorDeEdad||tieneLicencia);
+        console.log(" ");
+        console.log("MENSAJE CONCADENADO:");
+        let nombre = "Andrea";
+        let apellido="Perez"
+        let concadenacion="Hola "+nombre+" "+apellido+" bienvenida a mi programa.";
+       console.log(concadenacion);
+    </script>
+</body>
+</html>

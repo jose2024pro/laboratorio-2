@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let monto; 
+
+    do {
+        monto = parseFloat(prompt("Ingrese la nota entre 0 y 100", 0));
+    } while (monto < 0);
+    if(monto<=100){
+        let saldo=monto;
+        console.log("El valor a pagar es de "+saldo);
+        alert('El valor a pagar es de: $ '+saldo);
+    }else{
+         saldo=monto-monto*0.1;
+         console.log('El valor a pagar es de' +saldo);
+         alert('El valor a pagar es de:'+saldo);
+    }
+   </script>
+</body>
+</html>
