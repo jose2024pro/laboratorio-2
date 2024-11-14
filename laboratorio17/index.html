@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Portafolio Personal</title>
+</head>
+<body>
+
+    <header>
+      <h1>Jose Angel Lopez Acevedo</h1>
+    </header> 
+<br>
+    <nav>
+        <ul>
+            <li><a href="#Biografia">Biografia</a></li>
+            <li><a href="#Habilidad">Habilidades Técnicas</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <div id="Biografia">
+            <center><img id="ver-imagen" src="foto.png" alt=""></center>
+            <h2>Biografía</h2>
+            <article>Soy estudiante de Ingeniería de Sistemas con un fuerte interés en el desarrollo de software y la resolución de problemas tecnológicos. Tengo conocimientos en lenguajes de programación como JavaScript, HTML, Java y C++, lo que me permite trabajar en una variedad de proyectos tanto front-end como back-end. Mi objetivo es continuar expandiendo mis habilidades técnicas y aplicar mis conocimientos en el diseño y optimización de soluciones informáticas. Busco oportunidades para seguir aprendiendo y contribuir en proyectos innovadores dentro del ámbito tecnológico.</article>
+            <button onclick="mostrarMensaje()">Bienvenido</button>
+        </div>
+
+        <div id="Habilidad">
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Programación en JavaScript</li>
+                <li>Desarrollo Front-End (HTML/CSS)</li>
+                <li>Programación en Java</li>
+                <li>Programación en C++</li>
+                <li>Manejo de Bases de Datos</li>
+                <li>Control de Versiones (Git)</li>
+            </ul>
+        </div>
+
+        <div id="Contacto">
+            <form class="formulario" action="#" method="POST" enctype="multipart/form-data" id="registroForm">
+                <h2>Contacto</h2>
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required>
+                <label>Correo Electrónico:</label>
+                <input type="email" name="email" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy; 2024 - Hoja de vida</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
